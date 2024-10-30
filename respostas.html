@@ -1,0 +1,168 @@
+	<!doctype html>
+	<html lang="pt-br">
+
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>Pos Web Newsletter</title>
+		<link href="https://fonts.googleapis.com/icon?family=Material+Symbols+Outlined" rel="stylesheet">
+		<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+		<script src="https://cdn.tailwindcss.com"></script>
+		<script>
+			tailwind.config = {
+				theme: {
+					extend: {
+						colors: {
+							azul: {
+								ciano: '#DEF6F8',
+								claro: '#DEE2F8',
+							},
+							verde: {
+								claro: '#E2F8DE'
+							},
+							vermelho: {
+								claro: '#F8DEDE',
+							},
+							rosa: {
+								claro: '#F9EFFA',
+								escuro: '#EACAEF',
+							},
+							roxo:{
+								claro: '#AA80CC',
+								escuro: '#65558F'
+							}
+						},
+						fontFamily: {
+							inter: ['Inter', 'sans-serif'],
+							roboto: ['Roboto','sans-serif']
+						},
+					}
+				}
+			}
+		</script>
+	</head>
+
+	<body class="bg-rosa-claro flex items-center w-screen">
+
+		<main class="flex px-6 lg:h-5/6 lg:w-full lg:h-full">
+
+			<section class="bg-rosa-claro font-roboto text-sm w-1/12 hidden lg:block">
+				<div class="flex flex-col h-full justify-between text-center">
+					<div>
+						<div class="font-bold flex flex-col justify-center items-center m-6">
+							<i class="material-symbols-outlined text-3xl cursor-pointer" onclick="location.href='pesquisas.html';">content_paste_search</i>
+							<span>Pesquisas</span>
+						</div>
+						<div class="flex flex-col justify-center items-center m-6">
+							<i class="material-symbols-outlined text-3xl">campaign</i>
+							<span>Sugestões e Denúncias</span>
+						</div>
+						<div class="flex flex-col justify-center items-center m-6">
+							<i class="material-symbols-outlined text-3xl cursor-pointer" onclick="location.href='usuarios.html';">account_circle</i>
+							<span>Usuários</span>
+						</div>
+						<div class="flex flex-col justify-center items-center m-6">
+							<i class="material-symbols-outlined text-3xl">notifications</i>
+							<span>Notificações</span>
+						</div>
+						<div class="flex flex-col justify-center items-center m-6">
+							<i class="material-symbols-outlined text-3xl cursor-pointer" onclick="location.href='login.html';">logout</i>
+							<span>Sair</span>
+						</div>
+					</div>
+					<div>
+						<img class="p-6 m-auto opacity-80" src="assets/images/logo-sem-slogan.png" alt="Logo Colabore">
+					</div>
+				</div>
+			</section>
+			
+			<section class="bg-white rounded-lg lg:w-full mb-6">
+				<div class="justify-between flex">
+					<div class="flex items-center m-6">
+						<i class="material-symbols-outlined text-3xl cursor-pointer" onclick="location.href='pesquisas.html';">arrow_back</i>
+						<label class="ml-4 font-roboto text-2xl">Pesquisas</label>
+					</div>
+					<div class="flex items-center m-6">
+						<i class="material-symbols-outlined text-3xl">bookmark</i>
+						<i class="ml-4 material-symbols-outlined text-3xl">more_vert</i>
+					</div>
+				</div>
+				<div class="flex ml-6 mt-6">
+					<div class="w-1/12">
+						<img class="rounded-lg" src="assets/images/pesquisa-plano-saude.png" alt="Logo Jornada de Trabalho">
+					</div>
+					<div class="w-5/6 flex flex-col justify-between ml-6">
+						<div>
+							<h3 class="font-roboto text-2xl">Plano de saúde</h3>
+							<p class="font-roboto text-lg">Avalia a percepção dos funcionários sobre o atual plano de saúde fornecido pela empresa.</p>
+						</div>
+						<div class="flex mt-2 font-roboto font-bold">
+							<p class="text-lg">Tags:</p>
+							<button class="flex items-center bg-azul-claro border border-solid border-black rounded-r-full shadow-2xl ml-6 px-3" type="button">
+								<i class="material-symbols-outlined">add</i>
+								Benefícios
+							</button>
+							<button class="flex items-center bg-verde-claro border border-solid border-black rounded-r-full shadow-2xl ml-6 px-3" type="button">
+								<i class="material-symbols-outlined">add</i>
+								Qualidade de vida
+							</button>
+						</div>
+					</div>
+				</div>
+				<div class="flex justify-center mt-10 flex items-center ml-6 mb-6">
+					<label class="font-roboto text-3xl">Perguntas</label>
+				</div>
+				<form>
+					<div class="bg-rosa-claro rounded-lg p-3 mx-6 font-roboto">
+						<p class="my-3">1 - Qual é o seu nível de satisfação geral com o plano de saúde oferecido pela empresa? (1 menos satisfeito e 5 mais satisfeito)</p>
+						<input type="radio" id="1" value="1" name="q1">
+	  					<label for="1" class="">1</label>
+						<input type="radio" id="2" value="2" class="ml-6" name="q1">
+	  					<label for="2">2</label>
+						<input type="radio" id="3" value="3" class="ml-6" name="q1" checked>
+	  					<label for="3">3</label>
+						<input type="radio" id="4" value="4" class="ml-6" name="q1">
+	  					<label for="4">4</label>
+						<input type="radio" id="5" value="5" class="ml-6" name="q1">
+	  					<label for="5">5</label>
+					</div>
+					<div class="bg-rosa-claro rounded-lg p-3 mx-6 font-roboto mt-6">
+						<p class="my-3">2 - Você considera que as coberturas do plano de saúde atendem às suas necessidades e às da sua família?</p>
+						<input type="radio" id="sim" value="sim" name="q2" checked>
+	  					<label for="sim">Sim</label>
+						<input type="radio" id="nao" value="nao" name="q2" class="ml-6">
+	  					<label for="nao">Não</label>
+					</div>
+					<div class="bg-rosa-claro rounded-lg p-3 mx-6 font-roboto mt-6">
+						<p class="my-3">3 - Você já teve dificuldades para agendar consultas ou procedimentos médicos com o plano?</p>
+						<input type="radio" id="sim" value="sim" name="q3" checked>
+	  					<label for="sim">Sim</label>
+						<input type="radio" id="nao" value="nao" name="q3" class="ml-6">
+	  					<label for="nao">Não</label>
+					</div>
+					<div class="bg-rosa-claro rounded-lg p-3 mx-6 font-roboto mt-6">
+						<p class="my-3">4 - O processo de reembolso de despesas médicas é claro e eficiente para você?</p>
+						<input type="radio" id="sim" value="sim" name="q4" checked>
+	  					<label for="sim">Sim</label>
+						<input type="radio" id="nao" value="nao" name="q4" class="ml-6">
+	  					<label for="nao">Não</label>
+					</div>
+					<div class="bg-rosa-claro rounded-lg p-3 mx-6 font-roboto my-6">
+						<p class="my-3">5 - Compartilhe Seus Pensamentos</p>
+						<textarea  type="textarea" class="w-full"></textarea>
+					</div>
+				</form>
+				<div class="flex justify-center my-5 flex ml-6 font-roboto text-white">
+					<button class="bg-roxo-claro px-5 py-2 rounded-full shadow-2xl mx-6"
+							type="button" onclick="location.href='pesquisas.html';">Cancelar</button>
+					<button class="bg-roxo-claro px-5 py-2 rounded-full shadow-2xl mx-6"
+							type="button">Enviar</button>
+				</div>
+			</section>
+
+		</main>
+
+	</body>
+
+	</html>

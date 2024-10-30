@@ -1,0 +1,105 @@
+<!doctype html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Pos Web Newsletter</title>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Symbols+Outlined" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        azul: {
+                            ciano: '#DEF6F8',
+                            claro: '#DEE2F8',
+                        },
+                        verde: {
+                            claro: '#E2F8DE'
+                        },
+                        vermelho: {
+                            claro: '#F8DEDE',
+                        },
+                        rosa: {
+                            claro: '#F9EFFA',
+                            escuro: '#EACAEF',
+                        },
+                        roxo:{
+                            claro: '#AA80CC',
+                            escuro: '#65558F'
+                        }
+                    },
+                    fontFamily: {
+                        inter: ['Inter', 'sans-serif'],
+                        roboto: ['Roboto','sans-serif']
+                    },
+                }
+            }
+        }
+    </script>
+</head>
+
+<body class="bg-rosa-claro flex items-center w-screen">
+
+    <main class="flex px-6 lg:h-5/6 lg:w-full lg:h-full">
+
+        <section class="bg-rosa-claro font-roboto text-sm w-1/12 hidden lg:block">
+            <div class="flex flex-col h-full justify-between text-center">
+                <div>
+                    <div class="font-bold flex flex-col justify-center items-center m-6">
+                        <i class="material-symbols-outlined text-3xl cursor-pointer" onclick="location.href='pesquisas.html';">content_paste_search</i>
+                        <span>Pesquisas</span>
+                    </div>
+                    <div class="flex flex-col justify-center items-center m-6">
+                        <i class="material-symbols-outlined text-3xl">campaign</i>
+                        <span>Sugestões e Denúncias</span>
+                    </div>
+                    <div class="flex flex-col justify-center items-center m-6">
+                        <i class="material-symbols-outlined text-3xl cursor-pointer" onclick="location.href='usuarios.html';">account_circle</i>
+                        <span>Usuários</span>
+                    </div>
+                    <div class="flex flex-col justify-center items-center m-6">
+                        <i class="material-symbols-outlined text-3xl">notifications</i>
+                        <span>Notificações</span>
+                    </div>
+                    <div class="flex flex-col justify-center items-center m-6">
+                        <i class="material-symbols-outlined text-3xl cursor-pointer" onclick="location.href='login.html';">logout</i>
+                        <span>Sair</span>
+                    </div>
+                </div>
+                <div>
+                    <img class="p-6 m-auto opacity-80" src="assets/images/logo-sem-slogan.png" alt="Logo Colabore">
+                </div>
+            </div>
+        </section>
+        
+        <section class="bg-white rounded-lg lg:w-full mb-6">
+            <div class="justify-between flex">
+                <div class="flex items-center m-6">
+                    <i class="material-symbols-outlined text-3xl cursor-pointer" onclick="location.href='pesquisas.html';">arrow_back</i>
+                    <label class="ml-4 font-roboto text-2xl">Voltar</label>
+                </div>
+                <div class="flex items-center m-6">
+                    <i class="material-symbols-outlined text-3xl">bookmark</i>
+                    <i class="ml-4 material-symbols-outlined text-3xl">more_vert</i>
+                </div>
+            </div>
+            <div class="flex justify-center mt-10 flex flex-col items-center ml-6 mb-6">
+                <h1 class="font-roboto text-3xl">Cadastro realizado com sucesso!</h1>
+                <h2 class="font-roboto text-xl mt-2">Agora o usuário cadastrado já pode responder pesquisas</h2>
+            </div>
+            <div class="flex justify-center my-5 flex ml-6 font-roboto text-white">
+                <button class="bg-roxo-claro px-5 py-2 rounded-full shadow-2xl mx-6"
+                        type="button" onclick="location.href='pesquisas.html';">Voltar</button>
+            </div>
+        </section>
+
+    </main>
+
+</body>
+
+</html>
